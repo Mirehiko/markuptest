@@ -1,0 +1,110 @@
+html, body {
+  background: #fff;
+  color: #222;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+//
+
+
+
+.grid-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 320px) {
+    max-width: 475px;
+  }
+
+  @media screen and (min-width: 640px) {
+    max-width: 640px;
+  }
+
+  @media screen and (min-width: 960px) {
+    max-width: 960px;
+  }
+}
+.column {
+  @media screen and (min-width: 0px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 640px) {
+    width: 50%;
+
+    &:nth-child(odd):last-child {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 33.333333%;
+
+    &:nth-child(odd):last-child {
+      width: 33.333333%;
+    }
+    &:nth-child(3n+1):last-child {
+      width: 100%;
+    }
+    &:nth-child(3n+1):nth-last-child(2) {
+      width: 50%;
+    }
+    &:nth-child(3n+2):nth-last-child(1) {
+      width: 50%;
+    }
+  }
+}
+.card-wrapper {
+  width: 100%;
+  position: relative;
+
+  &.card-vertical {
+    padding-bottom: 150%;
+  }
+
+  &.card-cell {
+    padding-bottom: 100%;
+  }
+}
+
+.card-content-wrapper {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cardContent {
+  height: 100%;
+  background-color: #ccc;
+  background-size: cover;
+}
+.pic1 {
+  background-image: url("https://images01.nicepage.com/4b/9f/4b9fa4a97b53ee957772524b2fbcd436.jpeg");
+}
+.pic2 {
+  background-image: url("https://images01.nicepage.com/fb/77/fb7752cd44af6ad8f73c24a23180f289.jpeg");
+}
+.pic3 {
+  background-image: url("https://images01.nicepage.com/10/6c/106cc2413131ab9cdedda51533252abd.jpeg");
+}
+.pic4 {
+  background-image: url("https://images01.nicepage.com/67/20/67206d9b607ebf77737759c734a354ba.jpeg");
+}
+.pic5 {
+  background-image: url("https://images01.nicepage.com/55/f8/55f88bc82e74e5614c12d06055d44f87.jpeg");
+}
+.pic6 {
+  background-image: url("https://images01.nicepage.com/e8/e6/e8e663793470d08663babfebe964345c.jpeg");
+}
+.pic7 {
+  background-image: url("https://images01.nicepage.com/4b/62/4b62f6393509e9731483b9decbd42619.jpeg");
+}

@@ -1,0 +1,22 @@
+@import "variables";
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $selection-color, $scroll-background;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $scroll-background;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $selection-color;
+  border-radius: 20px;
+  border: 3px solid $scroll-background;
+}

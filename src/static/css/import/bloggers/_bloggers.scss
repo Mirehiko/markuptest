@@ -1,0 +1,26 @@
+@import "variables";
+@import "scrollbars";
+@import "header";
+@import "footer";
+@import "card";
+
+html, body {
+  background: $background-main-color;
+  color: $text-main-color;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  flex: 1 0 auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}

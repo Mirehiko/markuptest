@@ -1,0 +1,13 @@
+extends ../layout/layout.pug
+block vars
+	- var title = 'Главная';
+block header
+	include ../includes/blogers/header
+
+block content
+	div.container
+		include ../includes/blogers/content-main
+
+block footer
+	include ../includes/footer.pug     
+
